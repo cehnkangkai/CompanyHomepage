@@ -1,0 +1,45 @@
+/*图片列表*/
+#body-wrapper.container article{
+    width: 610px;
+    vertical-align: top;
+    display: inline-block;
+}
+#body-wrapper.container article h4{
+    width: 610px;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #444;
+    border-bottom: solid 1px #CFCFCE;
+    padding-bottom: 15px;
+}
+section#tupian li img{
+    width: 181px;
+    height: 150px;
+}
+section#tupian li{
+    margin-top: 15px;
+    margin-right: 33px;
+    display:inline-block;
+
+      }
+section#tupian li:nth-child(3n+3){
+    margin-right: 0;
+}
+@-webkit-keyframes tupian{
+    0%{
+        -webkit-transform:rotate(0deg);
+    }
+    40%{
+        -webkit-transform:rotate(60deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+    }
+}
+
+#tupian li:hover img{
+      -webkit-animation-name:tupian;
+      -webkit-animation-duration:1s;
+      -webkit-animation-timing-function:linear;
+}
+
